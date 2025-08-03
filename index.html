@@ -200,13 +200,21 @@
             </div>
         </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="py-20">
+           <!-- Publications Section -->
+        <section id="publications" class="py-20 reveal">
             <h2 class="text-3xl font-bold text-slate-100 section-title mb-12">Research Publications</h2>
-            <div class="space-y-6">
+            
+            <!-- Toggle Buttons -->
+            <div class="flex justify-center mb-8 space-x-4">
+                <button id="journal-btn" class="tab-button active">Journals</button>
+                <button id="conference-btn" class="tab-button">Conferences</button>
+            </div>
+
+            <!-- Publications Lists -->
+            <div id="journals-list" class="space-y-6">
                 <div class="glass-effect rounded-lg p-6">
-                    <h3 class="font-semibold text-slate-200">Optimized Node Placement and Dynamic Session Node Selection for Permissioned Blockchain in Industrial IoT</h3>
-                    <p class="text-sm text-slate-400">Gupta, S., Nandi, S. (Accepted, July 2025)</p>
+                    <h3 class="font-semibold text-slate-200">Optimized Node Placement for Permissioned Blockchain in IIoT</h3>
+                    <p class="text-sm text-slate-400">Gupta, S., Nandi, S. (Major Revision Submitted, Jan 2025)</p>
                     <p class="highlight-text text-sm mt-1">Elsevier Future Generation Computer Systems</p>
                 </div>
                 <div class="glass-effect rounded-lg p-6">
@@ -214,15 +222,18 @@
                     <p class="text-sm text-slate-400">Gupta, S., Raju, L. Nandi, S. (Submitted, June 2025)</p>
                     <p class="highlight-text text-sm mt-1">IEEE Transaction on Intelligent Transportation Systems</p>
                 </div>
+            </div>
+
+            <div id="conferences-list" class="space-y-6 hidden">
                 <div class="glass-effect rounded-lg p-6">
                     <h3 class="font-semibold text-slate-200">BlueDoS: A Novel Approach to Perform and Analyse DoS Attacks on Bluetooth Devices</h3>
                     <p class="text-sm text-slate-400">Shelke, P. N., Gupta, S., & Nandi, S. (Accepted, 2024)</p>
                     <p class="highlight-text text-sm mt-1">21st International Conference on Security and Cryptography (SECRYPT)</p>
                 </div>
-				<div class="glass-effect rounded-lg p-6">
+                 <div class="glass-effect rounded-lg p-6">
                     <h3 class="font-semibold text-slate-200">Security Enhancement using Vectoring, Cryptography and Steganography</h3>
-                    <p class="text-sm text-slate-400">Mittal, M., Gupta, S., Keserwani, P. K., & Govil, M. C. (Accepted, 2023)</p>
-                    <p class="highlight-text text-sm mt-1">2023 IEEE International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC)</p>
+                    <p class="text-sm text-slate-400">Mittal, M., Gupta, S., Keserwani, P. K., & Govil, M. C. (Feb 2023)</p>
+                    <p class="highlight-text text-sm mt-1">2023 International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC)</p>
                 </div>
             </div>
         </section>
@@ -366,6 +377,7 @@
     </script>
 </body>
 </html>
+
 
 
 
