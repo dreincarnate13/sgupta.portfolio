@@ -363,6 +363,26 @@
             observer.observe(section);
         });
 
+	// Publications Toggle
+            const journalBtn = document.getElementById('journal-btn');
+            const conferenceBtn = document.getElementById('conference-btn');
+            const journalsList = document.getElementById('journals-list');
+            const conferencesList = document.getElementById('conferences-list');
+
+            journalBtn.addEventListener('click', () => {
+                journalsList.classList.remove('hidden');
+                conferencesList.classList.add('hidden');
+                journalBtn.classList.add('active');
+                conferenceBtn.classList.remove('active');
+            });
+
+            conferenceBtn.addEventListener('click', () => {
+                conferencesList.classList.remove('hidden');
+                journalsList.classList.add('hidden');
+                conferenceBtn.classList.add('active');
+                journalBtn.classList.remove('active');
+            });
+
         document.head.insertAdjacentHTML("beforeend", `
             <style>
                 @keyframes fade-in {
@@ -377,6 +397,7 @@
     </script>
 </body>
 </html>
+
 
 
 
